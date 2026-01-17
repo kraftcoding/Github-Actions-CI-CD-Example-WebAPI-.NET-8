@@ -2,8 +2,8 @@
 services:
 
   githubactionscicdexamplewebapinet:
-    image: kraftcoding/githubactionscicdexamplewebapinet
-    container_name: githubactionscicdexamplewebapinet
+    image: kraftcoding/githubactionscicdexamplewebapinet:main
+    container_name: WebAPI-.NET-8
     build:
       context: .
       dockerfile: Github-Actions-CI-CD-Example-WebAPI-.NET-8/Dockerfile
