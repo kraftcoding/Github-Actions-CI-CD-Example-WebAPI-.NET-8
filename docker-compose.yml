@@ -10,6 +10,12 @@ services:
     environment:
         - ASPNETCORE_ENVIRONMENT=Development
         - ASPNETCORE_URLS=http://+:8080
+       # - ASPNETCORE_URLS=https://+:8081 (to provide certificates are needed)
+    ports:
+        - "8080:8080"
+       # - "8081:8081" (to provide certificates are needed)
+    depends_on: 
+      - watchtower
 
   watchtower:
     container_name: watchtower
