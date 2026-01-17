@@ -1,0 +1,13 @@
+NOTE: The project must be created with containerization features
+
+1. Add Docker Support to project in VS
+2. Build the Dockerfile
+3. Right click on project "Open in Terminal"
+
+docker login
+docker build -t kraftcoding/githubactionscicdexamplewebapinet:Latest .
+docker images
+docker push kraftcoding/githubactionscicdexamplewebapinet:Latest
+docker pull kraftcoding/githubactionscicdexamplewebapinet:Latest
+
+docker-compose up --build

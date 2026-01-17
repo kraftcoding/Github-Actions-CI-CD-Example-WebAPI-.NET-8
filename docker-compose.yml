@@ -1,0 +1,21 @@
+﻿
+services:
+
+  githubactionscicdexamplewebapinet:
+    image: kraftcoding/githubactionscicdexamplewebapinet
+    container_name: githubactionscicdexamplewebapinet
+    build:
+      context: .
+      dockerfile: Github-Actions-CI-CD-Example-WebAPI-.NET-8/Dockerfile
+    environment:
+        - ASPNETCORE_ENVIRONMENT=Development
+        - ASPNETCORE_URLS=http://+:8080
+
+  watchtower:
+    container_name: watchtower
+    image: containrrr/watchtower
+    environment:
+      - WATCHTOWER_CLEANUP=true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: --interval 30 kraftcoding/githubactionscicdexamplewebapinet    

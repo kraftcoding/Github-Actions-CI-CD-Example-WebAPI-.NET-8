@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="docker-compose.yml" />
+    <File Path="SCRIPTS/Commands.txt" />
+  </Folder>
+  <Project Path="Github-Actions-CI-CD-Example-WebAPI-.NET-8/Github-Actions-CI-CD-Example-WebAPI-.NET-8.csproj" />
+</Solution>
