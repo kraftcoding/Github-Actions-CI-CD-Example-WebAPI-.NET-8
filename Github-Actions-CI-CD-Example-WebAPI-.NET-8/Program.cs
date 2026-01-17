@@ -3,7 +3,7 @@ var builder = WebApplication.CreateBuilder(args);
 string id = Guid.NewGuid().ToString();
 string osDescription = System.Runtime.InteropServices.RuntimeInformation.OSDescription;
 DateTime startUpTime = DateTime.Now;
-const string ver = "v1.0.5";
+const string ver = "v1.0.6";
 
 var app = builder.Build();
 
