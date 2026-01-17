@@ -2,7 +2,7 @@
 services:
 
   githubactionscicdexamplewebapinet:
-    image: kraftcoding/githubactionscicdexamplewebapinet:main
+    image: kraftcoding/githubactionscicdexamplewebapinet:master
     container_name: WebAPI-.NET-8
     build:
       context: .
