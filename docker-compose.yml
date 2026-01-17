@@ -22,7 +22,7 @@ services:
       - WATCHTOWER_CLEANUP=true
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-    command: WebAPI-.NET-8
-    # command: --interval 30 WebAPI-.NET-8   
+    # command: WebAPI-.NET-8 (default is 24h)
+    command: --interval 30 WebAPI-.NET-8   
     
         
