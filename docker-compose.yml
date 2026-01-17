@@ -14,6 +14,8 @@ services:
     ports:
         - "8080:8080"
        # - "8081:8081" (to provide certificates are needed)
+    networks:
+      - webapi-net
     depends_on: 
       - watchtower
 
@@ -25,3 +27,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     command: --interval 30 kraftcoding/githubactionscicdexamplewebapinet:main   
+    networks:
+      webapi-net:
+        driver_opts:
+          com.docker.network.bridge.name: webapi-bridge
