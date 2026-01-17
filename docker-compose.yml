@@ -18,4 +18,4 @@ services:
       - WATCHTOWER_CLEANUP=true
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-    command: --interval 30 kraftcoding/githubactionscicdexamplewebapinet    
+    command: --interval 30 kraftcoding/githubactionscicdexamplewebapinet:main   
