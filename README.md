@@ -4,6 +4,11 @@ Embracing the tools that we will describe here, allows you to focus more on codi
 
 We will be dockerizing a simple backend Web API service and setting up the pipeline for it. It’s worth mentioning that although this solution may not be ideal for larger applications, it’s still a highly effective method for rapidly setting up CI/CD pipelines for less complex applications or testing environments.
 
+Check out the regarding video demostration and article:
+
+    • https://www.youtube.com/watch?v=PzxLvcxJbzw
+    • https://github.com/kraftcoding/IT-Document-Collection/blob/master/Kraftcoding%20Articles/Automate%20your%20builds%20with%20GitHub%20Actions%20-%20Kraftcoding%20Article.pdf
+
 ## Setting up Docker Hub
 
 We will need a Docker Hub account and container registry or repository to setup our pipelines and store our images. For that, in the Docker Hub dashboard, click on create repository button which you can find on the top right side below the navigation bar. For ore information check out the link below.
