@@ -1,4 +1,4 @@
-name: CI-CD Deploy to Docker Hub
+name: Publish to Docker Hub
 
 on:
   push:
